@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>キャラクター詳細 - CRA性格診断</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><a href="index.html">CRA Type 16</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">CRA性格診断</a></li>
+          <li><a href="about.html">CRA Type 16とは</a></li>
+          <li><a href="characters.html">キャラクター紹介</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+          <div class="mobile-menu-header">
+              <h1 class="logo">CRA Type 16</h1>
+              <button id="close-btn" class="close-btn" aria-label="メニューを閉じる">&times;</button>
+          </div>
+          <nav class="mobile-nav-list">
+              <ul>
+                  <li><a href="index.html">CRA性格診断</a></li>
+                  <li><a href="about.html">CRA Type 16とは</a></li>
+                  <li><a href="characters.html">キャラクター紹介</a></li>
+                  <li><a href="contact.html">お問い合わせ</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+
+  <div class="container" id="character-detail-container">
+    <div id="result-main">
+      <div class="result-text-content">
+        <p id="detail-persona"></p>
+        <h2 id="detail-name"></h2>
+        <p id="detail-catchphrase"></p>
+      </div>
+      <img id="detail-image" src="" alt="キャラクター画像">
+    </div>
+    
+    <div class="result-section">
+      <h3>📝 タイプ解説</h3>
+      <p id="detail-description"></p>
+    </div>
+
+    <div class="result-section">
+      <h3>💡 CRA的「あるある」</h3>
+      <ul id="detail-aruaru"></ul>
+    </div>
+
+    <div class="result-section">
+      <h3>💪 強みと弱み</h3>
+      <div id="detail-strengths-weaknesses"></div>
+    </div>
+    
+    <div class="result-section">
+      <h3>🌱 育成すべきスキル</h3>
+      <p id="detail-skill"></p>
+    </div>
+
+    <div class="result-section">
+      <h3>🏢 相性の良い働き方</h3>
+      <p id="detail-workstyle"></p>
+    </div>
+
+    <div class="result-section">
+      <h3>🚀 キャリアパスの提案</h3>
+      <p id="detail-career_path"></p>
+    </div>
+
+    <div class="navigation-buttons">
+      <a href="characters.html" id="back-to-list-btn" class="share-btn x-btn" style="background-color: #6c757d;">キャラクター一覧へ戻る</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

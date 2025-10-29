@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>キャラクター紹介 - CRA性格診断</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><a href="index.html">CRA Type 16</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">CRA性格診断</a></li>
+          <li><a href="about.html">CRA Type 16とは</a></li>
+          <li><a href="characters.html">キャラクター紹介</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+          <div class="mobile-menu-header">
+              <h1 class="logo">CRA Type 16</h1>
+              <button id="close-btn" class="close-btn" aria-label="メニューを閉じる">&times;</button>
+          </div>
+          <nav class="mobile-nav-list">
+              <ul>
+                  <li><a href="index.html">CRA性格診断</a></li>
+                  <li><a href="about.html">CRA Type 16とは</a></li>
+                  <li><a href="characters.html">キャラクター紹介</a></li>
+                  <li><a href="contact.html">お問い合わせ</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+
+  <div class="container">
+    <h2>キャラクター紹介</h2>
+    <p class="character-intro">CRA Type 16 性格診断に登場する16タイプの個性豊かなキャラクターたちです。気になるキャラクターをクリックして詳細を見てみましょう。</p>
+
+    <div id="character-list" class="character-grid-page">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

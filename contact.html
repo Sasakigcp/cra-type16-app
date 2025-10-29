@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ - CRA性格診断</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><a href="index.html">CRA Type 16</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">CRA性格診断</a></li>
+          <li><a href="about.html">CRA Type 16とは</a></li>
+          <li><a href="characters.html">キャラクター紹介</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+          <div class="mobile-menu-header">
+              <h1 class="logo">CRA Type 16</h1>
+              <button id="close-btn" class="close-btn" aria-label="メニューを閉じる">&times;</button>
+          </div>
+          <nav class="mobile-nav-list">
+              <ul>
+                  <li><a href="index.html">CRA性格診断</a></li>
+                  <li><a href="about.html">CRA Type 16とは</a></li>
+                  <li><a href="characters.html">キャラクター紹介</a></li>
+                  <li><a href="contact.html">お問い合わせ</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="profile-card">
+      <img id="profile-image" src="profile.jpg" alt="プロフィール画像">
+      <div class="profile-text">
+        <h3>ササキ</h3>
+        <p>この診断サイトを作成したササキです。臨床開発の現場で働く中で、CRAの多様な個性をもっと面白く伝えられないかと思い、このサイトを開発しました。楽しんでいただければ幸いです。</p>
+      </div>
+    </div>
+
+    <div class="activity-card">
+        <h3>その他の活動</h3>
+        <div class="activity-links">
+            <a href="https://gcpuniv.com" target="_blank" rel="noopener noreferrer" class="activity-link blog-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+                <span>ブログ: GCP University</span>
+            </a>
+            <a href="https://www.udemy.com/course/ich-efficacye1e1999pdf/?referralCode=854261B972CF09CF7303" target="_blank" rel="noopener noreferrer" class="activity-link udemy-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.33 13.52c-.37.37-.89.6-1.5.6-1.39 0-2.5-1.11-2.5-2.5s1.11-2.5 2.5-2.5c.61 0 1.13.23 1.5.6l1.06-1.06c-.69-.69-1.63-1.1-2.62-1.1-2.21 0-4 1.79-4 4s1.79 4 4 4c.99 0 1.93-.41 2.62-1.1l-1.06-1.06z"/></svg>
+                <span>Udemy講座: ICH Efficacy全シリーズ徹底解説</span>
+            </a>
+            <a href="https://www.udemy.com/course/sasakigcp/?referralCode=4DA243E1C6D78A2A6EED" target="_blank" rel="noopener noreferrer" class="activity-link udemy-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.33 13.52c-.37.37-.89.6-1.5.6-1.39 0-2.5-1.11-2.5-2.5s1.11-2.5 2.5-2.5c.61 0 1.13.23 1.5.6l1.06-1.06c-.69-.69-1.63-1.1-2.62-1.1-2.21 0-4 1.79-4 4s1.79 4 4 4c.99 0 1.93-.41 2.62-1.1l-1.06-1.06z"/></svg>
+                <span>Udemy講座: 新人CRA/CRCのためのGCP省令入門</span>
+            </a>
+             <a href="https://www.youtube.com/@sasaki-pg5kx" target="_blank" rel="noopener noreferrer" class="activity-link youtube-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                <span>YouTubeチャンネル</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="contact-card">
+      <h3>お問い合わせ</h3>
+      <p>ご意見、ご感想などは、以下のXアカウントへDMにてご連絡ください。</p>
+      <a href="https://twitter.com/sasaki_gcp" class="share-btn x-btn" target="_blank" rel="noopener noreferrer">XでDMを送る</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

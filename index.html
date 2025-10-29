@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRA性格診断</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><a href="index.html">CRA Type 16</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">CRA性格診断</a></li>
+          <li><a href="about.html">CRA Type 16とは</a></li>
+          <li><a href="characters.html">キャラクター紹介</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+          <div class="mobile-menu-header">
+              <h1 class="logo">CRA Type 16</h1>
+              <button id="close-btn" class="close-btn" aria-label="メニューを閉じる">&times;</button>
+          </div>
+          <nav class="mobile-nav-list">
+              <ul>
+                  <li><a href="index.html">CRA性格診断</a></li>
+                  <li><a href="about.html">CRA Type 16とは</a></li>
+                  <li><a href="characters.html">キャラクター紹介</a></li>
+                  <li><a href="contact.html">お問い合わせ</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1>CRA性格診断</h1>
+      <p class="intro">いくつかの質問から、あなたのCRAとしての一面を診断します。</p>
+    </div>
+
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <p id="question-counter"></p>
+    <div id="quiz-container">
+    </div>
+
+    <div class="navigation-buttons">
+      <button id="prev-btn" class="hidden">戻る</button>
+      <button id="next-btn" class="hidden">次へ</button>
+    </div>
+
+    <div id="result" class="hidden">
+      <div id="result-main">
+        <div class="result-text-content">
+          <p id="result-persona"></p>
+          <h2 id="result-name"></h2>
+          <p id="result-catchphrase"></p>
+        </div>
+        <img id="result-image" src="character.jpg" alt="診断結果キャラクター">
+      </div>
+      
+      <div class="result-section">
+        <h3>📊 あなたの特性バランス</h3>
+        <div id="result-percentages"></div>
+      </div>
+
+      <div class="result-section">
+        <h3>📝 あなたのタイプは…</h3>
+        <p id="result-description"></p>
+      </div>
+
+      <div class="result-section">
+        <h3>💡 CRA的「あるある」</h3>
+        <ul id="result-aruaru"></ul>
+      </div>
+
+      <div class="result-section">
+        <h3>💪 強みと弱み</h3>
+        <div id="result-strengths-weaknesses"></div>
+      </div>
+      
+      <div class="result-section">
+        <h3>🌱 育成すべきスキル</h3>
+        <p id="result-skill"></p>
+      </div>
+
+      <div class="result-section">
+        <h3>🏢 相性の良い働き方</h3>
+        <p id="result-workstyle"></p>
+      </div>
+
+      <div class="result-section">
+        <h3>🚀 キャリアパスの提案</h3>
+        <p id="result-career_path"></p>
+      </div>
+
+      <div class="result-section" id="share-section">
+        <h3>💌 結果をシェアする</h3>
+        <div class="share-buttons-container">
+          <a href="#" id="share-x-btn" class="share-btn x-btn" target="_blank" rel="noopener noreferrer">Xでシェア</a>
+          <button id="share-copy-btn" class="share-btn copy-btn">Instagram用にコピー</button>
+        </div>
+        <p class="share-note">※Instagramボタンは結果をコピーします。ストーリーズや投稿にペーストしてご利用ください。</p>
+      </div>
+
+      <div class="result-section" id="feedback-section">
+        <h3>📊 診断結果の精度について</h3>
+        <p class="feedback-intro">今後の診断精度向上のため、この結果がどのくらいご自身に当てはまるか、ご意見をお聞かせください。</p>
+        
+        <div id="feedback-form">
+          <p class="feedback-question">Q. この診断結果は、ご自身のことを的確に表していますか？</p>
+          <div class="feedback-rating-buttons">
+            <button class="feedback-rating-btn" data-value="5">かなり当てはまる</button>
+            <button class="feedback-rating-btn" data-value="4">まあまあ当てはまる</button>
+            <button class="feedback-rating-btn" data-value="3">どちらともいえない</button>
+            <button class="feedback-rating-btn" data-value="2">あまり当てはまらない</button>
+            <button class="feedback-rating-btn" data-value="1">全く当てはまらない</button>
+          </div>
+      
+          <p class="feedback-question">Q. 特にどの部分が「当たっている」「違う」と感じましたか？ (任意)</p>
+          <textarea id="feedback-comment" rows="4" placeholder="例）「CRA的あるある」が自分にそっくりでした！"></textarea>
+      
+          <button id="feedback-submit-btn" class="feedback-submit-btn">フィードバックを送信する</button>
+        </div>
+        
+        <p id="feedback-thanks" class="hidden">ご協力ありがとうございました！</p>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
